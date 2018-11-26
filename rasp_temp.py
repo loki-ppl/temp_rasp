@@ -52,7 +52,7 @@ while menu == True:
                                     dataAtual = dataAtual.strftime('%d/%m/%Y')
                                     time.sleep(delay)
                                     r = requests.get(
-                                            "https://script.google.com/macros/s/AKfycbwgJbIVzosgQz3Kk7JIfLfl7JLgBIrTdj1h_beQoAOjIS-Ojak/exec?temperatura=" + str(temperatura) + "C&" + "horario=" + str(horaatual)+"&"+"humidade="+str(humid$
+                                            "https://script.google.com/macros/s/AKfycbwgJbIVzosgQz3Kk7JIfLfl7JLgBIrTdj1h_beQoAOjIS-Ojak/exec?temperatura=" + str(temperatura) + "C&" + "horario=" + str(horaatual)+"&"+"humidade="+str(humidade))
                                     print("\n" + r.text)
                                     print("Pressione ctrl + C  para encerrar o envio.")
                         except KeyboardInterrupt:
